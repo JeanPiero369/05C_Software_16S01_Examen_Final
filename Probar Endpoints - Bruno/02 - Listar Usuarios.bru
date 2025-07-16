@@ -1,0 +1,19 @@
+meta {
+  name: 02 - Listar Usuarios
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8000/usuarios
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "alias": "jperez",
+    "name": "Juan Perez",
+    "carPlate": "ABC-123"
+  }
+}
